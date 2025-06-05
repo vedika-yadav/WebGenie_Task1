@@ -1,0 +1,486 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    background-image: url("1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 30px;
+    font-family: fantasy;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+
+.nav_list{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list_items{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+.nav_list .nav_list_items a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+
+}
+
+.nav_list .nav_list_items a:hover{
+    color: #ff7200;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .home_des{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+
+}
+
+.content .book_btn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .book_btn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.book_btn:hover{
+    background-color: white;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 60px;
+}
+
+.book_mov{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.m_center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9)50%, rgba(0, 0, 0, 0.9)50%);
+}
+
+.m_tickets{
+    width: 550px;
+    height: fit-content;
+    border: 0.4mm solid rgba(0,0,0,0.08);
+    border-radius: 3mm;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: poppins;
+    max-height: 96vh;
+    overflow: auto;
+    background: white;
+    box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.25);
+    margin-top: 30px;
+    margin-bottom: 61px;
+}
+
+.m_ticket_selector{
+    background: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.m_head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.m_title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.m_seats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 150px;
+    position: relative;
+}
+
+.m_status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.m_seats::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 220px;
+    height: 7px;
+    background: rgb(141, 198, 255);
+    border-radius: 0 0 3mm 3mm;
+    border-top: 0.3mm solid rgb(180, 180, 180);
+}
+
+.m_item{
+    font-size: 12px;
+    position: relative;
+}
+
+.m_item::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    outline: 0.2mm solid rgb(120, 120, 120);
+    border-radius: 0.3mm;
+}
+
+.m_item:nth-child(2)::before{
+    background: rgb(180, 180, 180);
+    outline: none;
+}
+
+.m_item:nth-child(3)::before{
+    background-color: #ff7200;
+    outline: none;
+
+}
+
+.m_all_seats{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    margin: 60px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.m_seat{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 0.5mm;
+    outline: 0.3mm solid rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.m_all_seats input:checked + label{
+    background: #ff7200;
+    outline: none;
+
+}
+
+.m_seat.booked{
+    background: rgb(180, 180, 180);
+    outline: none;
+}
+
+input{
+    display:none;
+}
+
+.m_timings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.m_dates{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m_dates-item{
+    width: 40px;
+    height: 40px;
+    background: rgb(233, 233, 233);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+.m_day{
+    font-size: 12px;
+}
+
+.m_times{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.m_time{
+    font-size: 14px;
+    width: fit-content;
+    padding: 7px 14px;
+    background: rgb(233, 233, 233);
+    border-radius: 2mm;
+    cursor: pointer;
+}
+
+.m_timings input:checked + label{
+    background: #ff7200;
+    color: white;
+}
+
+.m_price{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m_total{   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.m_total span{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.m_price button{
+    background: rgb(60,60,60);
+    color: white;
+    font-family: poppins;
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 2mm;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.book_out{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0,0,0,1)80%, rgba(0,0,0,1)80%);
+    padding-bottom: 40vh;
+    
+}
+
+.column{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9%;
+    position: relative;
+}
+
+.pic_btn{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(49, 49, 49);
+}
+
+.img1{
+    position: relative;
+}
+.img2{
+    position: relative;
+}
+.img3{
+    position: relative;
+}
+
+
+.caption_text1{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.579);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.caption_text2{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.579);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+.caption_text3{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.579);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+.img1:hover .caption_text1{
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img2:hover .caption_text2{
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+.img3:hover .caption_text3{
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+.text{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.navbar_book{
+    width: 1200px;
+    height: 75px;
+    margin: 50px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}

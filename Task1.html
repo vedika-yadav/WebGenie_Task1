@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vedika Yadav">
+    <title>AnyTickets</title>
+
+    <link rel = "stylesheet" href = "Task1_style.css">
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+
+
+</head>
+
+<body>
+    
+  <div id="home">
+    <div class = "main">
+        <div class = "navbar">
+            <div class = "icon">
+                <h2 class = "logo">AnyTickets</h2>
+            </div>
+
+            <div class="menu">
+                <ul class = "nav_list">
+                    <li class = "nav_list_items"><a href = "#" onclick="return show('home','home');">HOME</a></li>
+                    <li class = "nav_list_items"><a href = "#" onclick="return show('book','home');">TICKETS</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class = "content">
+                <h1>Endless Entertainment <br><span>Anytime</span></h1>
+                <br>
+                <br>    
+                <p class = "home_des">From heart-racing matches to soul-soothing concerts, side-splitting stand-up to blockbuster movies,<br>
+                    we’ve got your ticket to every kind of thrill. Discover entertainment like never before<br>
+                    fast, easy, and right on time.</p>
+
+                    <button class="book_btn"><a href="#" onclick="return show('book','home');">BOOK NOW</a></button>
+
+        </div>
+
+    </div>
+  </div>
+    
+  
+  
+  
+  
+  <div id="book_mov" style="display:none">
+    <div class="m_center">
+        <div class="m_tickets">
+            <div class="m_ticket_selector">
+                <div class="m_head">
+                    <div class="m_title">
+                        Select Seats
+                    </div>
+                </div>
+                <div class="m_seats">
+                    <div class="m_status">
+                        <div class="m_item">Available</div>
+                        <div class="m_item">Booked</div>
+                        <div class="m_item">Selected</div>
+                    </div>
+                    <div class="m_all_seats">
+                        <input type="checkbox" name="tickets" id="s1"/>
+                        <label for="s1" class="m_seat booked"></label>
+                    </div>
+                </div>
+                <div class="m_timings">
+                    <div class="m_dates">
+                        <input type="radio" name="date" id="d1" checked />
+                        <label for="d1" class="m_dates-item">
+                        <div class="m_day">Sun</div>
+                        <div class="m_date">8</div>
+                        </label>
+                        <input type="radio" name="date" id="d2" />
+                        <label for="d2" class="m_dates-item">
+                        <div class="m_day">Mon</div>
+                        <div class="m_date">9</div>
+                        </label>
+                        <input type="radio" name="date" id="d3" />
+                        <label for="d3" class="m_dates-item">
+                        <div class="m_day">Tue</div>
+                        <div class="m_date">10</div>
+                        </label>
+                        <input type="radio" name="date" id="d4" />
+                        <label for="d4" class="m_dates-item">
+                        <div class="m_day">Wed</div>
+                        <div class="m_date">11</div>
+                        </label>
+                        <input type="radio" name="date" id="d5" />
+                        <label for="d5" class="m_dates-item">
+                        <div class="m_day">Thurs</div>
+                        <div class="m_date">12</div>
+                        </label>
+                        <input type="radio" name="date" id="d6" />
+                        <label for="d6" class="m_dates-item">
+                        <div class="m_day">Fri</div>
+                        <div class="m_date">13</div>
+                        </label>
+                        <input type="radio" name="date" id="d7" />
+                        <label for="d7" class="m_dates-item">
+                        <div class="m_day">Sat</div>
+                        <div class="m_date">14</div>
+                        </label>  
+                    </div>
+                    <div class="m_times">
+                        <input type="radio" name="time" id="t1" checked>
+                        <label for="t1" class="m_time">10:30</label>
+                        <input type="radio" id="t2" name="time" />
+                        <label for="t2" class="m_time">14:30</label>
+                        <input type="radio" id="t3" name="time" />
+                        <label for="t3" class="m_time">18:00</label>
+                        <input type="radio" id="t4" name="time" />
+                        <label for="t4" class="m_time">21:30</label>
+                    </div>
+                </div>
+            </div>
+            <div class="m_price">
+              <div class="m_total">
+                <span>
+                    <span class="m_count">0</span> Tickets
+                </span>
+                <div class="m_amount">0</div>
+              </div> 
+              <button type="button">Book</button> 
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div id="book" style="display:none">
+    <div class="book_out">
+        <div class = "navbar_book">
+            <div class = "icon">
+                <h2 class = "logo">AnyTickets</h2>
+            </div>
+
+            <div class="menu">
+                <ul class = "nav_list">
+                    <li class = "nav_list_items"><a href = "#" onclick="return show('home','book');">HOME</a></li>
+                    <li class = "nav_list_items"><a href = "#" onclick="return show('book','book');">TICKETS</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div>
+                <div class="row">
+                    <div class="column">
+                        <div class="img1">
+                                <img src="P1.jpg" style="width:100%" class="pic_btn">
+                            <div class="caption_text1">
+                                <a href="#" onclick="return show('book_mov','home');">
+                                <p class="text">SHOWS</p> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="img2">
+                            <img src="P2.jpg" style="width:100%" class="pic_btn">
+                            <div class="caption_text2">
+                                <a href="#" onclick="return show('book_mov','home');">
+                                    <p class="text">MOVIES</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="img3">
+                            <img src="P3.jpg" style="width:100%" class="pic_btn">
+                            <div class="caption_text3">
+                                <a href="#" onclick="return show('book_mov','home');">
+                                    <p class="text">CONCERTS</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <script>
+    let seats = document.querySelector(".m_all_seats")
+    for(var i = 0; i < 59; i++){
+        let randint = Math.floor(Math.random()*2);
+        let booked = randint === 1 ? "booked" : "";
+        seats.insertAdjacentHTML("beforeend", 
+        '<input type="checkbox" name="tickets" id="s' + 
+        (i + 2) +
+        '"/><label for="s' + 
+        (i + 2) +
+        '" class="m_seat ' + booked + '"></label>');
+    }
+
+    let tickets = seats.querySelectorAll("input")
+    tickets.forEach((ticket)=>{
+        ticket.addEventListener("change", ()=>{
+            let m_amount = document.querySelector(".m_amount").innerHTML;
+            let count = document.querySelector(".m_count").innerHTML;
+            m_amount = Number(m_amount);
+            count = Number(count);
+
+            if(ticket.checked){
+                count+=1
+                m_amount+=200
+            }
+            else{
+                count-=1
+                m_amount-=200
+            }
+            document.querySelector(".m_amount").innerHTML = m_amount;
+            document.querySelector(".m_count").innerHTML = count;
+        })
+    })
+
+
+
+
+
+
+  function show(shown, hidden) {
+    document.getElementById(hidden).style.display='none';
+    document.getElementById(shown).style.display='block';
+  
+  return false;
+}
+
+</script>
+
+
+</body>
+
+
+</html>
